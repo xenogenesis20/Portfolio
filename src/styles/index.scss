@@ -1,16 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+}
+
 body {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
     background-color: #212529;
-    color: powderblue;
+    color: #4AF626;
     overflow-x: hidden;
+    font-family: 'Press Start 2P', cursive;
+
 }
 html {
 	
-	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
 section{
@@ -19,6 +26,56 @@ section{
     flex-direction: column;
     align-items: center;
     min-height: 400px;
-    padding: 100px 20vw;
+    padding: 100px 10vw;
 }
 
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
+}
+
+.navbar-nav{
+    margin: 0 !important;
+}
+
+a.nav-link{
+    transition: all 2s;
+}
+
+a.nav-link:hover{
+    color: #4AF626 !important;
+    font-size: 1.2rem;
+}
+
+.typewriter h1 {
+    display: flex;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: normal; /* Adjust as needed */
+    line-height: 2rem;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  .height100vh{
+    height: 100vh;
+
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+  }

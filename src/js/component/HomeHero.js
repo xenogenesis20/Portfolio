@@ -4,15 +4,13 @@ import "..//../styles/index.scss";
 
 export const HomeHero = props => {
 	return (
-		<section className="blue">
+		<section className="typewriter height100vh">
 			<h1>
-				Hello, <span />
-			</h1>
-			<h1>
-				My Name is <span />
-			</h1>
-			<h1>
-				Maikel <span />
+				Hello,
+				<br />
+				My Name Is
+				<br />
+				Maikel;
 			</h1>
 		</section>
 	);

@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import { Container, Nav, NavDropdown } from "react-bootstrap";
+import "..//../styles/index.scss";
+
 export const NavBar = () => {
 	return (
-		<Navbar bg="dark" variant="dark" expand="lg">
+		<Navbar sticky="top" bg="dark" variant="dark" expand="lg">
 			<Container>
 				<Navbar.Brand href="#home">Maikel Martinez</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
