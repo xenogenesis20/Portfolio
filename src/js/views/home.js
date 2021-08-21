@@ -6,6 +6,7 @@ import { HomeHero } from "../component/HomeHero";
 import Skills from "../component/Skills";
 import Projects from "../component/Projects";
 import About from "../component/About";
+import Contact from "../component/Contact";
 
 //Bootstrap imports
 import Container from "react-bootstrap/Container";
@@ -33,6 +34,12 @@ export const Home = () => (
 		<Row>
 			<Col>
 				<About />
+			</Col>
+		</Row>
+
+		<Row>
+			<Col>
+				<Contact />
 			</Col>
 		</Row>
 	</Container>
