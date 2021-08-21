@@ -38,6 +38,12 @@ html {
 
 @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 
+    .p-3,.m-3{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+
     .m-6{
         margin-top: 200px;
     }
@@ -97,6 +103,10 @@ html {
 
 
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
+
+    .p-3,.m-3{
+        
+    }
 
     .sprite{
         height: 10rem;
@@ -168,7 +178,10 @@ html {
 }
 
 
+h4{
+    border-bottom: rgb(255, 255, 255) solid 1px;
 
+}
 
 
 .list-group-item{

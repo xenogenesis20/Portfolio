@@ -6,20 +6,20 @@ import { Col, Row, ListGroup } from "react-bootstrap";
 const Skills = props => {
 	return (
 		<section className="height100vh">
-			<Row>
-				<Col>
+			<Row className="p-3 m-3">
+				<Col className="p-3 m-3">
 					<h1>Skills</h1>
 				</Col>
 			</Row>
-			<Row>
-				<Col>
+			<Row className="p-3 m-3">
+				<Col className="p-3 m-3">
 					<p>
 						I am a Enthusiastic and solution-driven full stack web developer with a background in the
 						medical field who is always motivated and efficient when building projects.
 					</p>
 				</Col>
 				<Row className="text-center justify-content-center">
-					<Col className="">
+					<Col className="p-3 m-3">
 						<h4>Front end</h4>
 						<p>Reactjs</p>
 						<p>CSS</p>
@@ -27,7 +27,7 @@ const Skills = props => {
 						<p>CSS</p>
 						<p>Bootstrap</p>
 					</Col>
-					<Col className="">
+					<Col className="p-3 m-3">
 						<h4>Back end</h4>
 						<p>Python</p>
 						<p>Flask</p>
@@ -35,7 +35,7 @@ const Skills = props => {
 						<p> Data-Modeling</p>
 						<p>Data-structues</p>
 					</Col>
-					<Col className="">
+					<Col className="p-3 m-3">
 						<h4>Other</h4>
 						<p>GIT</p>
 						<p>AGILE/SCRUM</p>
