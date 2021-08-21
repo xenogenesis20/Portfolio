@@ -2,6 +2,19 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+
+
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+
+
 h1{
     font-family: 'Press Start 2P', cursive;
 }
@@ -20,14 +33,127 @@ html {
 	
 	scroll-behavior: smooth;
 }
-section{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 400px;
-    padding: 100px 10vw;
+
+
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+    .m-6{
+        margin-top: 200px;
+    }
+
+    .sprite{
+        height: 5rem;
+    }
+    p{
+        font-size: 0.75em;
+    }
+    section{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding: 25px 5vh;
+    }
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around
+    }
+
+    .typewriter h1 {
+        display: flex;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: normal; /* Adjust as needed */
+        line-height: 1.2;
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      
+      .height100vh{
+        height: 95vh;
+    
+      }
+    
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(255, 255, 255); }
+      }
+
 }
+
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+
+    .sprite{
+        height: 10rem;
+    }
+
+    p{
+        font-size: 1em;
+    }
+    
+    section{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding: 100px 10vh 50px 10vh;
+    }
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+
+    .typewriter h1 {
+        display: flex;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: normal; /* Adjust as needed */
+        line-height: 1.2;
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      
+      .height100vh{
+        height: 90vh;
+    
+      }
+    
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(255, 255, 255); }
+      }
+}
+
+
+
 
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-collapse {
@@ -41,8 +167,19 @@ section{
     margin: 0 !important;
 }
 
+
+
+
+
+.list-group-item{
+    color: #4AF626 !important;
+    background-color: purple;
+}
+
+
+
 a.nav-link{
-    transition: all 2s;
+    transition: color font-size 2s;
 }
 
 a.nav-link:hover{
@@ -50,32 +187,3 @@ a.nav-link:hover{
     font-size: 1.2rem;
 }
 
-.typewriter h1 {
-    display: flex;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: normal; /* Adjust as needed */
-    line-height: 2rem;
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  .height100vh{
-    height: 100vh;
-
-  }
-
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(255, 255, 255); }
-  }

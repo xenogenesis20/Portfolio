@@ -4,7 +4,7 @@ import "..//../styles/index.scss";
 
 const Contact = props => {
 	return (
-		<section className="green">
+		<section className="height100vh">
 			<h1>Contact</h1>
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto repudiandae aperiam non rem

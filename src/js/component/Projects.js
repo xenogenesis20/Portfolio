@@ -4,7 +4,7 @@ import "..//../styles/index.scss";
 
 const Projects = props => {
 	return (
-		<section className="dark">
+		<section className="height100vh">
 			<h1>Projects</h1>
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto repudiandae aperiam non rem

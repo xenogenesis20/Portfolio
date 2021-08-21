@@ -25,7 +25,7 @@ export const Home = () => (
 				<Skills />
 			</Col>
 		</Row>
-		<Row>
+		<Row className="m-6">
 			<Col>
 				<Projects />
 			</Col>
