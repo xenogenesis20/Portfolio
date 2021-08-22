@@ -38,9 +38,9 @@ html {
 
 @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 
-    .p-3,.m-3{
-        margin: 0 !important;
-        padding: 0 !important;
+    .padding-margin{
+        margin: 0 ;
+        padding: 0 ;
     }
 
 
@@ -104,8 +104,9 @@ html {
 
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
 
-    .p-3,.m-3{
-        
+    .padding-margin{
+        padding: 20px;
+        margin: 20px;
     }
 
     .sprite{
