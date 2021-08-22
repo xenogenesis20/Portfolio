@@ -13,7 +13,10 @@
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
 .project-detail-container {
-    height: 80vh;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .project-container{
@@ -65,7 +68,6 @@ html {
 @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 
     .project-detail-container {
-        height: auto;
         object-fit: contain;
       }
 
@@ -80,6 +82,7 @@ html {
 
     .project-container,.project-list{
         width: 95vw;
+        overflow-y: auto;
     }
 
     .accordion-button::after{
@@ -157,9 +160,9 @@ html {
         object-fit: contain;
       }
 
-    .projects{
-        width: 95vh;
-    }
+    // .projects{
+    //     width: 95vh;
+    // }
 
     .accordion-button{
         flex-direction: column;
@@ -167,7 +170,8 @@ html {
     }
 
     .project-container,.project-list{
-        width: 50vw;
+        width: 90vw;
+        overflow-y: auto;
     }
 
     .accordion-button::after{
