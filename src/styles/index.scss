@@ -12,8 +12,34 @@
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
+.project-detail-container {
+    height: 80vh;
+  }
 
+  .project-container{
+      height: 75vh;
+  }
+  
+  .project-box:hover {
+    background-color: rgba(255, 255, 255, 0.795) !important;
+    color: #211a23;
+    cursor: pointer;
+  }
 
+  .project-box:hover .project-title,
+  .project-box:hover .stack,
+  .project-box:hover .demo {
+    color: #211a23;
+  }
+
+  .project-box {
+    height: 100%;
+    border-bottom: 1px dotted white !important;
+    /* cursor: crosshair; */
+    background-color: #212529 !important;
+    border-radius: 0% !important;
+    padding: 2px !important;
+  }
 
 h1{
     font-family: 'Press Start 2P', cursive;
@@ -26,7 +52,7 @@ body {
     background-color: #212529;
     color: #4AF626;
     overflow-x: hidden;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Montserrat', cursive;
 
 }
 html {
@@ -37,6 +63,28 @@ html {
 
 
 @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+    .project-detail-container {
+        height: auto;
+        object-fit: contain;
+      }
+
+    .projects{
+        width: 100%;
+    }
+
+    .accordion-button{
+        flex-direction: column;
+
+    }
+
+    .project-container,.project-list{
+        width: 95vw;
+    }
+
+    .accordion-button::after{
+        display: none;
+    }
 
     .padding-margin{
         margin: 0 ;
@@ -60,7 +108,7 @@ html {
         flex-direction: column;
         align-items: center;
         min-height: 400px;
-        padding: 25px 5vh;
+        padding: 25px 1vw;
     }
 
     .hero-section{
@@ -104,6 +152,28 @@ html {
 
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
 
+    .project-detail-container {
+        height: auto;
+        object-fit: contain;
+      }
+
+    .projects{
+        width: 95vh;
+    }
+
+    .accordion-button{
+        flex-direction: column;
+        
+    }
+
+    .project-container,.project-list{
+        width: 50vw;
+    }
+
+    .accordion-button::after{
+        display: none;
+    }
+    
     .padding-margin{
         padding: 20px;
         margin: 20px;

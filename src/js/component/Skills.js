@@ -36,7 +36,7 @@ const Skills = props => {
 						<p>Data-structues</p>
 					</Col>
 					<Col className="padding-margin">
-						<h4>Other</h4>
+						<h4>Other skills</h4>
 						<p>GIT</p>
 						<p>AGILE/SCRUM</p>
 						<p>Communication</p>
