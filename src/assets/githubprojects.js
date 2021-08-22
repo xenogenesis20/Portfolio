@@ -1,5 +1,3 @@
-import gif from "./nv.gif";
-
 const PROJECTS = [
 	{
 		title: "Next Visit",
