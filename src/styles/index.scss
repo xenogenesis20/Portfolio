@@ -75,11 +75,22 @@ html {
         width: 100%;
     }
 
-    .accordion-button{
-        flex-direction: column;
-
+    .card-body{
+        background-color: #212529;
     }
 
+    .accordion-button{
+        flex-direction: column;
+        background-color: #212529;
+        color: #4AF626;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: white;
+        background-color: #212529;
+
+        box-shadow: 0px 5px 0px 0px #4AF626, 0px 10px 0px 0px #49f626de, 0px 15px 0px 0px #acff9c, 0px 20px 0px 0px #cef8c6, 0px 25px 0px 0px #eaffe6, 0px 5px 15px 5px rgba(0,0,0,0);
+    }
     .project-container,.project-list{
         width: 95vw;
         overflow-y: auto;

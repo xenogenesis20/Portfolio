@@ -8,7 +8,7 @@ const Skills = props => {
 		<section className="height100vh">
 			<Row className="padding-margin">
 				<Col className="padding-margin">
-					<h1>Skills</h1>
+					<h1 id="skills">Skills</h1>
 				</Col>
 			</Row>
 			<Row className="padding-margin">
@@ -20,7 +20,11 @@ const Skills = props => {
 				</Col>
 				<Row className="text-center justify-content-center">
 					<Col className="padding-margin">
-						<h4>Front end</h4>
+						<h4>
+							Front <br />
+							end{" "}
+						</h4>
+
 						<p>Reactjs</p>
 						<p>CSS</p>
 						<p>Javascript</p>
@@ -28,7 +32,10 @@ const Skills = props => {
 						<p>Bootstrap</p>
 					</Col>
 					<Col className="padding-margin">
-						<h4>Back end</h4>
+						<h4>
+							Back <br />
+							end
+						</h4>
 						<p>Python</p>
 						<p>Flask</p>
 						<p>SQLAlchemy</p>
@@ -36,7 +43,9 @@ const Skills = props => {
 						<p>Data-structues</p>
 					</Col>
 					<Col className="padding-margin">
-						<h4>Other skills</h4>
+						<h4>
+							Other <br /> skills
+						</h4>
 						<p>GIT</p>
 						<p>AGILE/SCRUM</p>
 						<p>Communication</p>

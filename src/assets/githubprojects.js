@@ -22,6 +22,17 @@ const PROJECTS = [
 		backend: true
 	},
 	{
+		title: "SMS FIFO and LIFO",
+		description: `Serverside queue showcasing the use of FIFO and LIFO methods. SMS notification with Twillio`,
+		image: "https://i.ytimg.com/vi/tbUlRMER_9w/hqdefault.jpg",
+		github: "https://github.com/xenogenesis20/queue-db",
+		date: "July, 2021",
+		stack: "Python, Flask,",
+		snipet: false,
+		favorite: true,
+		backend: true
+	},
+	{
 		title: "Bootstrap exercise",
 		description: `Exercise to learn about bootstrap components`,
 		image: "https://i.imgur.com/I2qCsah.png",
@@ -52,17 +63,6 @@ const PROJECTS = [
 		stack: "HTML, CSS",
 		snipet: false,
 		favorite: true,
-		backend: false
-	},
-	{
-		title: "",
-		description: ``,
-		image: "",
-		github: "",
-		date: ", 2021",
-		stack: "JS, CSS,",
-		snipet: true,
-		favorite: false,
 		backend: false
 	},
 	{
