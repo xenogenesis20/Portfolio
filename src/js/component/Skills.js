@@ -14,7 +14,7 @@ const Skills = props => {
 			<Row className="padding-margin">
 				<Col className="padding-margin">
 					<p>
-						I am a Enthusiastic and solution-driven full stack web developer with a background in the
+						I am a enthusiastic and solution-driven full stack web developer with a background in the
 						medical field who is always motivated and efficient when building projects.
 					</p>
 				</Col>

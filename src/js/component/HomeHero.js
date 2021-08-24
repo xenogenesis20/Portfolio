@@ -5,6 +5,7 @@ import dkflex from "../../img/dkflex.gif";
 import mariowalking from "../../img/mariowalking.gif";
 import sonicrunning from "../../img/sonicrunning.gif";
 import { Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const HomeHero = props => {
 	return (
@@ -26,9 +27,11 @@ export const HomeHero = props => {
 				</Row>
 				<Row>
 					<Col className="d-flex justify-content-center">
-						<div>
-							<img className="sprite" src={dkflex} alt="Donkey Kong" />
-						</div>
+						<Link to="/dkc">
+							<div>
+								<img className="sprite" src={dkflex} alt="Donkey Kong" />
+							</div>
+						</Link>
 					</Col>
 					<Col className="d-flex justify-content-center">
 						<div>

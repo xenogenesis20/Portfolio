@@ -27,7 +27,7 @@ const PROJECTS = [
 		image: "https://i.ytimg.com/vi/tbUlRMER_9w/hqdefault.jpg",
 		github: "https://github.com/xenogenesis20/queue-db",
 		date: "July, 2021",
-		stack: "Python, Flask,",
+		stack: "Python, Flask",
 		snipet: false,
 		favorite: true,
 		backend: true
@@ -49,7 +49,7 @@ const PROJECTS = [
 		image: "https://i.imgur.com/CeHmHYL.png",
 		github: "https://github.com/xenogenesis20/excuse--generator",
 		date: "Apr, 2021",
-		stack: "JS, CSS,",
+		stack: "JS, CSS",
 		snipet: true,
 		favorite: false,
 		backend: false

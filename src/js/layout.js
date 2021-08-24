@@ -6,6 +6,7 @@ import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
+import { DkcHome } from "./views/DkcHome";
 
 import { NavBar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -24,6 +25,9 @@ const Layout = () => {
 					<Switch>
 						<Route exact path="/">
 							<Home />
+						</Route>
+						<Route exact path="/dkc">
+							<DkcHome />
 						</Route>
 						<Route exact path="/demo">
 							<Demo />
