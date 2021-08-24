@@ -12,6 +12,28 @@
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
+
+
+
+// .blinking {
+//     animation: blink-animation 1s steps(5, start) infinite;
+//     -webkit-animation: blink-animation 1s steps(5, start) infinite;
+//   }
+//   @keyframes blink-animation {
+//     to {
+//       visibility: hidden;
+//     }
+//   }
+//   @-webkit-keyframes blink-animation {
+//     to {
+//       visibility: hidden;
+//     }
+//   }
+
+.card{
+    background-color: #4AF626 ;
+}
+
 .project-detail-container {
     height: 85%;
     display: flex;
@@ -56,8 +78,45 @@ body {
     color: #4AF626;
     overflow-x: hidden;
     font-family: 'Montserrat', cursive;
+    text-shadow: 0 0 5px #c8c8c8c2;
+
 
 }
+
+.overflow-auto{
+    overflow-x: auto;
+}
+
+.fab{
+    font-size: 2em;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    
+    color: #4AF626;
+}
+
+
+
+// body::after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     background: repeating-linear-gradient(
+//       0deg,
+//       rgba(black, 0.15),
+//       rgba(black, 0.15) 1px,
+//       transparent 1px,
+//       transparent 2px
+//     );
+//   }
 html {
 	
 	scroll-behavior: smooth;
@@ -66,6 +125,10 @@ html {
 
 
 @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+    p{
+        font-size: 1.2em;
+    }
 
     .project-detail-container {
         object-fit: contain;
@@ -113,9 +176,7 @@ html {
     .sprite{
         height: 5rem;
     }
-    p{
-        font-size: 0.75em;
-    }
+    
     section{
         position: relative;
         display: flex;
@@ -166,6 +227,10 @@ html {
 
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
 
+    p{
+        font-size: 1.5em;
+    }
+
     .project-detail-container {
         height: auto;
         object-fit: contain;
@@ -198,9 +263,7 @@ html {
         height: 10rem;
     }
 
-    p{
-        font-size: 1em;
-    }
+    
     
     section{
         position: relative;
