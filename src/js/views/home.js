@@ -7,7 +7,7 @@ import Skills from "../component/Skills";
 import Projects from "../component/Projects";
 import About from "../component/About";
 import Contact from "../component/Contact";
-
+import ParticlesBG from "../component/Particles";
 //Bootstrap imports
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -15,6 +15,7 @@ import Col from "react-bootstrap/Col";
 
 export const Home = () => (
 	<Container fluid>
+		<ParticlesBG />
 		<Row>
 			<Col>
 				<HomeHero />

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "..//../styles/index.scss";
+import "../../styles/index.scss";
+import ImgParticles from "./ImgParticles";
 import { Col, Row, ListGroup } from "react-bootstrap";
 
 const Skills = props => {
@@ -54,7 +55,7 @@ const Skills = props => {
 					</Col>
 				</Row>
 			</Row>
-			{/* HTML5/CSS3,Bootstrap,Javascript,Node.js,Python,Flask,API's,React.js, Flux, SCRUM, SQL, SQLAlchemy, MySQL,User Stories, Data-Structures, Data-Modeling,REST, MVC, Event oriented programing, The DOM. */}
+			<ImgParticles />
 		</section>
 	);
 };

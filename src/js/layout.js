@@ -7,7 +7,6 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 import { DkcHome } from "./views/DkcHome";
-
 import { NavBar } from "./component/navbar";
 import { Footer } from "./component/footer";
 

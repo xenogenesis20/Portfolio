@@ -12,7 +12,12 @@
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
-
+#tsparticles{
+    position : absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
 
 
 .blinking {
