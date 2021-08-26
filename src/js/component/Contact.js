@@ -21,21 +21,20 @@ const Contact = props => {
 			</Row>
 			<Row>
 				<Col className="d-flex justify-content-center">
-					<Card className="mb-2" style={{ width: "18rem" }}>
+					<Card className="mb-2 contact-card">
 						<Card.Body>
 							<Card.Title>Email</Card.Title>
 							<Card.Subtitle className="mb-2 text-muted">Send one, its free :)</Card.Subtitle>
 							<Card.Text>Xenogenesis20@outlook.com</Card.Text>
-							<Card.Link href="#">Card Link</Card.Link>
 						</Card.Body>
 					</Card>
 				</Col>
 				<Col className="d-flex justify-content-center">
-					<Card className="mb-2" style={{ width: "18rem" }}>
+					<Card className="mb-2 contact-card ">
 						<Card.Body>
-							<Card.Title>Links</Card.Title>
-							<Card.Subtitle className="mb-2 text-muted">Click one, you know you want to</Card.Subtitle>
-							<Card.Text>Some Social Media links </Card.Text>
+							<Card.Title>Some Social Media links </Card.Title>
+							<Card.Subtitle className="mb-2 text-muted">Click one, you know you want to.</Card.Subtitle>
+							{/* <Card.Text></Card.Text> */}
 							<Card.Link className="icon-link" target="_blank" href="https://github.com/xenogenesis20">
 								<i className="fab fa-github" />
 							</Card.Link>

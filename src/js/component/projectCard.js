@@ -6,8 +6,12 @@ import { Container, Row, Image } from "react-bootstrap";
 const ProjectCard = ({ title, image, description }) => {
 	return (
 		<Container className="project-detail-container mt-4">
-			<Row className="title-box d-flex justify-content-center align-content-center text-uppercase">{title}</Row>
-			<Row className="image-box d-flex justify-content-center align-content-center">
+			<Row
+				className="title-box d-flex justify-content-center align-content-center text-uppercase mb-2"
+				style={{ fontSize: "1.5em" }}>
+				{title}
+			</Row>
+			<Row className="image-box d-flex justify-content-center align-content-center mb-2">
 				<Image className="card-image" src={image} alt={`${title} image`} fluid />
 			</Row>
 			<Row
