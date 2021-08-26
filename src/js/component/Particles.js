@@ -29,7 +29,7 @@ const ParticlesBG = props => {
 					enable: false
 				},
 				fullScreen: {
-					enable: true,
+					enable: false,
 					zIndex: -1
 				},
 				detectRetina: true,

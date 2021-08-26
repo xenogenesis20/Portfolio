@@ -14,6 +14,10 @@ export const HomeHero = props => {
 				<Col className="typewriter ">
 					<h1>Hello, My Name Is Maikel;</h1>
 				</Col>
+				<Row>
+					<h2>Full Stack Web Developer;</h2>
+					<h6>Pizza Lover;</h6>
+				</Row>
 			</Row>
 		</section>
 	);
