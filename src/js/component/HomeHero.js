@@ -10,41 +10,11 @@ import { Link } from "react-router-dom";
 export const HomeHero = props => {
 	return (
 		<section className="height100vh hero-section">
-			<div className="typewriter ">
-				<h1>
-					Hello,
-					<br />
-					My Name Is
-					<br />
-					Maikel;
-				</h1>
-			</div>
-			<div className="character-selection">
-				<Row>
-					<Col>
-						<h2 className="text-center">Pick a character!</h2>
-					</Col>
-				</Row>
-				<Row>
-					<Col className="d-flex justify-content-center">
-						<Link to="/dkc">
-							<div>
-								<img className="sprite" src={dkflex} alt="Donkey Kong" />
-							</div>
-						</Link>
-					</Col>
-					<Col className="d-flex justify-content-center">
-						<div>
-							<img className="sprite" src={mariowalking} alt="Mario" />
-						</div>
-					</Col>
-					<Col className="d-flex justify-content-center">
-						<div>
-							<img className="sprite" src={sonicrunning} alt="Mario" />
-						</div>
-					</Col>
-				</Row>
-			</div>
+			<Row>
+				<Col className="typewriter ">
+					<h1>Hello, My Name Is Maikel;</h1>
+				</Col>
+			</Row>
 		</section>
 	);
 };

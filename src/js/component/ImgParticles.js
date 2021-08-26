@@ -24,7 +24,7 @@ const ImgParticles = props => {
 						out_mode: "out"
 					},
 					shape: {
-						type: ["image", "circle"],
+						type: ["image"],
 						image: [
 							{
 								src: mariowalking,

@@ -6,7 +6,7 @@ import { Col, Row, ListGroup } from "react-bootstrap";
 
 const Skills = props => {
 	return (
-		<section className="height100vh">
+		<section className="height100vh mbottom">
 			<Row className="padding-margin">
 				<Col className="padding-margin">
 					<h1 id="skills">Skills</h1>
@@ -20,11 +20,8 @@ const Skills = props => {
 					</p>
 				</Col>
 				<Row className="text-center justify-content-center">
-					<Col className="padding-margin">
-						<h4>
-							Front <br />
-							end{" "}
-						</h4>
+					<Col xs={12} lg={true} className="padding-margin">
+						<h2>Front end </h2>
 
 						<p>Reactjs</p>
 						<p>CSS</p>
@@ -32,21 +29,16 @@ const Skills = props => {
 						<p>HTML</p>
 						<p>Bootstrap</p>
 					</Col>
-					<Col className="padding-margin">
-						<h4>
-							Back <br />
-							end
-						</h4>
+					<Col xs={12} lg={true} className="padding-margin">
+						<h2>Back end</h2>
 						<p>Python</p>
 						<p>Flask</p>
 						<p>SQLAlchemy</p>
 						<p> Data-Modeling</p>
 						<p>Data-structues</p>
 					</Col>
-					<Col className="padding-margin">
-						<h4>
-							Other <br /> skills
-						</h4>
+					<Col xs={12} lg={true} className="padding-margin">
+						<h2>Other skills</h2>
 						<p>GIT</p>
 						<p>AGILE/SCRUM</p>
 						<p>Communication</p>
@@ -55,7 +47,7 @@ const Skills = props => {
 					</Col>
 				</Row>
 			</Row>
-			<ImgParticles />
+			<Row>{/* <ImgParticles /> */}</Row>
 		</section>
 	);
 };
