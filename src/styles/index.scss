@@ -15,8 +15,8 @@
 
 #tsparticles{
     position : absolute;
-    width:100%;
-    height:100%;
+    width:90%;
+    height:80%;
     z-index:-1;
 }
 
@@ -212,9 +212,12 @@ html {
     }
 
     .hero-section{
+        height: 90vh;
+        padding-top: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around
+        justify-content: space-around;
+        border: 1px solid gray;
     }
 
     
@@ -275,6 +278,7 @@ html {
     
     
     section{
+        height: 100vh;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -284,9 +288,12 @@ html {
     }
 
     .hero-section{
+        height: 90vh;
+        padding-top: 30px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between
+        justify-content: space-around;
+        border: 1px solid gray;
     }
 
     
