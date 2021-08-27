@@ -50,9 +50,9 @@ const ParticlesBG = props => {
 						},
 						onHover: {
 							enable: true,
-							mode: "grab",
+							mode: "light",
 							parallax: {
-								enable: true,
+								enable: false,
 								force: 6,
 								smooth: 10
 							}
@@ -101,7 +101,7 @@ const ParticlesBG = props => {
 										value: "#000000"
 									}
 								},
-								radius: 1000
+								radius: 500
 							},
 							shadow: {
 								color: {

@@ -9,6 +9,9 @@ import injectContext from "./store/appContext";
 import { DkcHome } from "./views/DkcHome";
 import { NavBar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import Projects from "./component/Projects";
+import Skills from "./component/Skills";
+import Contact from "./component/Contact";
 
 //create your first component
 const Layout = () => {
@@ -25,8 +28,17 @@ const Layout = () => {
 						<Route exact path="/">
 							<Home />
 						</Route>
-						<Route exact path="/dkc">
-							<DkcHome />
+						<Route exact path="/projects">
+							<Projects />
+						</Route>
+						<Route exact path="/skills">
+							<Skills />
+						</Route>
+						<Route exact path="/about">
+							<Skills />
+						</Route>
+						<Route exact path="/contact">
+							<Contact />
 						</Route>
 						<Route exact path="/demo">
 							<Demo />

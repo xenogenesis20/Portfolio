@@ -15,8 +15,8 @@ import Col from "react-bootstrap/Col";
 
 export const Home = () => (
 	<Container fluid>
-		<ParticlesBG />
-		<Row>
+		{/* <ParticlesBG /> */}
+		<Row className="h-100">
 			<Col>
 				<HomeHero />
 			</Col>
