@@ -1,10 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
@@ -12,6 +8,65 @@
 @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+
+:root {
+ 
+
+    --Oxfordblue: #0b132b;
+    --Spacecadet: #1c2541;
+    --Independence: #3A506B;
+    --Bluegreen: #5BC0BE;
+    --Turqblue: #6FFFE9;
+    --fw-title: 400;
+    
+    }
+
+    .project-title{
+        color: var(--Bluegreen);
+    }
+
+    #button-tooltip > .tooltip-inner {
+        background-color: var(--Turqblue);
+        color: var(--Oxfordblue);
+        border: 1px solid var(--Oxfordblue);
+      }
+      
+      #button-tooltip > .tooltip-arrow {
+        border-top: 5px solid var(--Turqblue);
+      }
+
+.text-shadows{
+        text-shadow:
+          0.025em 0.025em 0 #60d1cf,
+          0.05em 0.05em 0 #45998c,
+          0.075em 0.075em 0 #319996,
+          0.1em 0.1em 0 #297380;
+          
+        
+        /* other styling */
+        font-weight: var(--fw-title);
+        text-transform: uppercase;
+        font-size: calc(1.5rem + 4vw);
+        text-align: center;
+        margin: 0;
+        color: var(--Independence);
+       
+}
+
+.btn-outline-secondary {
+    color: var(--Independence);
+    border-color: #5BC0BE;
+}
+
+// , .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary
+
+.btn-outline-secondary:hover {
+    color: var(--Turqblue);
+    background-color: var(--Oxfordblue);
+    border-color: var(--Independence); /*set the color you want here*/
+}
 
 #tsparticles{
     position : absolute;
@@ -59,7 +114,7 @@
   .project-box:hover .project-title,
   .project-box:hover .stack,
   .project-box:hover .demo {
-    color: #211a23;
+    color: var(--Spacecadet);
   }
 
   .project-box {
@@ -72,19 +127,20 @@
   }
 
 h1{
-    font-family: 'Audiowide', cursive;
-    font-size: clamp(1rem, 10vw, 2rem); 
+    font-family: 'Fugaz One', cursive;
+    font-size: clamp(1rem, 10vw, 4rem); 
+    color: var(--Turqblue);
 }
 
 body {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-    background-color: #212529;
-    color: #4AF626;
+    background-color: var(--Oxfordblue);
+    color: var(--Independence);
     overflow-x: hidden;
     font-family: 'Montserrat', cursive;
-    text-shadow: 0 0 5px #c8c8c8c2;
+    // text-shadow: 0 0 5px #c8c8c8c2;
 
 
 }
@@ -98,12 +154,12 @@ body {
 }
 
 a{
-    color: white;
+    color: var(--Bluegreen);
 }
 
 a:hover{
     
-    color: #4AF626;
+    color: var(--Turqblue);
 }
 
 
@@ -152,7 +208,7 @@ html {
 
     p{
         font-size: 1.2em;
-        color: rgb(230, 230, 230);
+        color: #b1cdee
     }
 
     .project-detail-container {
@@ -170,14 +226,14 @@ html {
     .accordion-button{
         flex-direction: column;
         background-color: #212529;
-        color: #4AF626;
+        color: var(--Bluegreen);
     }
 
     .accordion-button:not(.collapsed) {
         color: white;
-        background-color: #212529;
+        background-color: var(--Spacecadet);
 
-        box-shadow: 0px 5px 0px 0px #4AF626, 0px 10px 0px 0px #49f626de, 0px 15px 0px 0px #acff9c, 0px 20px 0px 0px #cef8c6, 0px 25px 0px 0px #eaffe6, 0px 5px 15px 5px rgba(0,0,0,0);
+        // box-shadow: 0px 5px 0px 0px #4AF626, 0px 10px 0px 0px #49f626de, 0px 15px 0px 0px #acff9c, 0px 20px 0px 0px #cef8c6, 0px 25px 0px 0px #eaffe6, 0px 5px 15px 5px rgba(0,0,0,0);
     }
     .project-container,.project-list{
         width: 95vw;
@@ -240,7 +296,7 @@ html {
 
     p{
         font-size: 1.5em;
-        color: rgb(230, 230, 230);
+        color: #b1cdee
     }
 
     .project-detail-container {
@@ -318,7 +374,7 @@ html {
 h2{
     border-bottom: rgb(255, 255, 255) solid 1px;
     padding: 0.8em;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Fugaz One', cursive;
     font-size: clamp(1rem, 10vw, 1.5rem); 
 }
 
