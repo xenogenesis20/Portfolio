@@ -12,6 +12,7 @@ import { Footer } from "./component/footer";
 import Projects from "./component/Projects";
 import Skills from "./component/Skills";
 import Contact from "./component/Contact";
+import About from "./component/About";
 
 //create your first component
 const Layout = () => {
@@ -35,7 +36,7 @@ const Layout = () => {
 							<Skills />
 						</Route>
 						<Route exact path="/about">
-							<Skills />
+							<About />
 						</Route>
 						<Route exact path="/contact">
 							<Contact />
