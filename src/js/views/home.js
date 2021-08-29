@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/index.scss";
 
 //Components
@@ -12,36 +12,51 @@ import ParticlesBG from "../component/Particles";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { HeroCanvas } from "../component/HeroCanvas";
 
-export const Home = () => (
-	<Container fluid>
-		{/* <ParticlesBG /> */}
-		<Row className="h-100">
-			<Col>
-				<HomeHero />
-			</Col>
-		</Row>
-		<Row>
-			<Col>
-				<Skills />
-			</Col>
-		</Row>
-		<Row className="m-6">
-			<Col>
-				<Projects />
-			</Col>
-		</Row>
+export const Home = () => {
+	const [width, setWidth] = useState(window.innerWidth);
+	const breakpoint = 992;
 
-		<Row>
-			<Col>
-				<About />
-			</Col>
-		</Row>
+	useEffect(
+		() => {
+			console.log(window.innerWidth);
+			const handleWindowResize = () => setWidth(window.innerWidth);
+			window.addEventListener("resize", handleWindowResize);
+			return () => window.removeEventListener("resize", handleWindowResize);
+		},
+		[width]
+	);
 
-		<Row>
-			<Col>
-				<Contact />
-			</Col>
-		</Row>
-	</Container>
-);
+	return (
+		<Container fluid>
+			{/* <ParticlesBG /> */}
+			<Row className="h-100">
+				<h3>Hi, My Name is Maikel,</h3>
+				<Col>{width < breakpoint ? <HomeHero /> : <HeroCanvas />}</Col>
+			</Row>
+			<Row>
+				<Col>
+					<Skills />
+				</Col>
+			</Row>
+			<Row className="m-6">
+				<Col>
+					<Projects />
+				</Col>
+			</Row>
+
+			<Row>
+				<Col>
+					<About />
+				</Col>
+			</Row>
+
+			<Row>
+				<Col>
+					<Contact />
+				</Col>
+			</Row>
+		</Container>
+	);
+};

@@ -24,7 +24,6 @@ const Projects = props => {
 
 	useEffect(
 		() => {
-			console.log(window.innerWidth);
 			const handleWindowResize = () => setWidth(window.innerWidth);
 			window.addEventListener("resize", handleWindowResize);
 			return () => window.removeEventListener("resize", handleWindowResize);
