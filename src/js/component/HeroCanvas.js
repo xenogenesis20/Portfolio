@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
 export const HeroCanvas = props => {
-	const position = { x: 0, y: 0, radius: 150 };
+	const position = { x: 0, y: 0, radius: 100 };
 	const [test, setTest] = useState(null);
 	const [width, setWidth] = useState(window.innerWidth);
 	const [height, setHeight] = useState(window.innerHeight);
@@ -99,7 +99,7 @@ export const HeroCanvas = props => {
 					if (textCoordinates.data[y * 4 * textCoordinates.width + x * 4 + 3] > 128) {
 						let positionX = x + adjustX;
 						let positionY = y + adjustY;
-						particleArray.push(new Particle(positionX * 3, positionY * 5));
+						particleArray.push(new Particle(positionX * 3, positionY * 6));
 					}
 				}
 			}
@@ -140,12 +140,24 @@ export const HeroCanvas = props => {
 		}
 	};
 
-	useEffect(() => {
-		requestIdRef.current = requestAnimationFrame(animate);
-		return () => {
-			cancelAnimationFrame(requestIdRef.current);
-		};
-	}, []);
+	useEffect(
+		() => {
+			const handleWindowResize = () => setWidth(window.innerWidth);
+			window.addEventListener("resize", handleWindowResize);
+			return () => window.removeEventListener("resize", handleWindowResize);
+		},
+		[width]
+	);
+
+	useEffect(
+		() => {
+			requestIdRef.current = requestAnimationFrame(animate);
+			return () => {
+				cancelAnimationFrame(requestIdRef.current);
+			};
+		},
+		[width]
+	);
 
 	return <canvas onMouseMove={e => handleMove(e.clientX, e.clientY)} {...size} ref={canvasRef} />;
 };
