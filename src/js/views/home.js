@@ -32,7 +32,6 @@ export const Home = () => {
 		<Container fluid>
 			{/* <ParticlesBG /> */}
 			<Row className="h-100">
-				<h3>Hi, My Name is Maikel,</h3>
 				<Col>{width < breakpoint ? <HomeHero /> : <HeroCanvas />}</Col>
 			</Row>
 			<Row>

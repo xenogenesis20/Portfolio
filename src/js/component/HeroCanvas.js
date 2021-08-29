@@ -23,10 +23,12 @@ export const HeroCanvas = props => {
 
 	const renderFrame = () => {
 		const ctx = canvasRef.current.getContext("2d");
+		var randomColor = Math.floor(Math.random() * 16777215).toString(16);
 		ctx.clearRect(0, 0, width, height);
 		ctx.fillStyle = "#0b132b";
 		ctx.font = " 2vw 'Fugaz One'";
 		ctx.fillText("<Full Stack Web Developer/>", 0, 30);
+
 		// ctx.strokeStyle = "white";
 		// ctx.strokeRect(0, 0, 100, 100);
 		const textCoordinates = ctx.getImageData(0, 0, 500, 500);
@@ -68,12 +70,9 @@ export const HeroCanvas = props => {
 			let directionY = forceDirectionY * force * this.density;
 
 			if (distance < position.radius) {
-				var randomColor = Math.floor(Math.random() * 16777215).toString(16);
 				const ctx = canvasRef.current.getContext("2d");
 				this.x -= directionX;
 				this.y -= directionY;
-				ctx.fillStyle = randomColor;
-				// ctx.current.fill();
 			} else {
 				if (this.x !== this.baseX) {
 					let dx = this.x - this.baseX;
