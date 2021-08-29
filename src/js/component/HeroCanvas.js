@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
 export const HeroCanvas = props => {
-	const position = { x: 0, y: 0, radius: 250 };
+	const position = { x: 0, y: 0, radius: 150 };
+	const [test, setTest] = useState(null);
 	const [width, setWidth] = useState(window.innerWidth);
 	const [height, setHeight] = useState(window.innerHeight);
 	const size = { width: width, height: 600 };
@@ -12,11 +13,12 @@ export const HeroCanvas = props => {
 
 	let particleArray = [];
 	let adjustX = 10;
-	let adjustY = 100;
+	let adjustY = 50;
 
 	const handleMove = (clix, cliy) => {
 		position.x = clix;
 		position.y = cliy;
+		// setTest(position);
 	};
 
 	const renderFrame = () => {
@@ -37,7 +39,7 @@ export const HeroCanvas = props => {
 
 	class Particle {
 		constructor(x, y) {
-			this.x = x + 100;
+			this.x = x;
 			this.y = y;
 			this.size = 2;
 			this.baseX = this.x;
@@ -66,8 +68,12 @@ export const HeroCanvas = props => {
 			let directionY = forceDirectionY * force * this.density;
 
 			if (distance < position.radius) {
+				var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+				const ctx = canvasRef.current.getContext("2d");
 				this.x -= directionX;
 				this.y -= directionY;
+				ctx.fillStyle = randomColor;
+				// ctx.current.fill();
 			} else {
 				if (this.x !== this.baseX) {
 					let dx = this.x - this.baseX;
@@ -88,13 +94,13 @@ export const HeroCanvas = props => {
 		} else {
 			console.log("init ran");
 			const ctx = canvasRef.current.getContext("2d");
-			const textCoordinates = ctx.getImageData(0, 0, height, width);
+			const textCoordinates = ctx.getImageData(0, 0, width, 600);
 			for (let y = 0, y2 = textCoordinates.height; y < y2; y++) {
 				for (let x = 0, x2 = textCoordinates.width; x < x2; x++) {
 					if (textCoordinates.data[y * 4 * textCoordinates.width + x * 4 + 3] > 128) {
 						let positionX = x + adjustX;
 						let positionY = y + adjustY;
-						particleArray.push(new Particle(positionX * 3, positionY * 3));
+						particleArray.push(new Particle(positionX * 3, positionY * 5));
 					}
 				}
 			}
@@ -103,7 +109,7 @@ export const HeroCanvas = props => {
 
 	setTimeout(() => {
 		init();
-	}, 3000);
+	}, 1000);
 
 	useEffect(() => {
 		const canvas = canvasRef.current;
@@ -113,25 +119,22 @@ export const HeroCanvas = props => {
 	const animate = () => {
 		if (!canvasRef.current) return;
 		renderFrame();
-
 		requestIdRef.current = requestAnimationFrame(animate);
 	};
 
 	const connect = () => {
+		const ctx = canvasRef.current.getContext("2d");
 		for (let a = 0; a < particleArray.length; a++) {
 			for (let b = a; b < particleArray.length; b++) {
-				// let dx = position.x - this.x;
-				// let dy = position.y - this.y;
-				// let distance = Math.sqrt(dx * dx + dy * dy);
 				let dx = particleArray[a].x - particleArray[b].x;
 				let dy = particleArray[a].y - particleArray[b].y;
 				let distance = Math.sqrt(dx * dx + dy * dy);
-				if (distance < 100) {
+				if (distance < 5) {
 					ctx.strokeStyle = "white";
 					ctx.lineWidth = 2;
 					ctx.beginPath();
-					ctx.moveTo(particleArray[a].x, particleArray[a.y]);
-					ctx.lineTo(particleArray[a].x, particleArray[a.y]);
+					ctx.moveTo(particleArray[a].x, particleArray[a].y);
+					ctx.lineTo(particleArray[b].x, particleArray[b].y);
 					ctx.stroke();
 				}
 			}
