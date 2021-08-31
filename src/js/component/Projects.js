@@ -68,7 +68,7 @@ const Projects = props => {
 			<h1>Projects</h1>
 			<Row className="project-container">
 				<Col xl={8} lg={8} md={12} sm={12} xs={12} className="projects-list">
-					<div className="filter d-flex w-100 justify-content-between mb-2 mt-3">
+					<div className="filter d-flex w-100 justify-content-around mb-2 mt-3">
 						<span className="filter-link mr-1 ml-3" onMouseOver={() => resetArr("github")}>
 							All
 						</span>
