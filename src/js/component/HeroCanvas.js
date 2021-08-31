@@ -76,11 +76,11 @@ export const HeroCanvas = props => {
 			} else {
 				if (this.x !== this.baseX) {
 					let dx = this.x - this.baseX;
-					this.x -= dx / 10;
+					this.x -= dx / 15;
 				}
 				if (this.y !== this.basyY) {
 					let dy = this.y - this.baseY;
-					this.y -= dy / 10;
+					this.y -= dy / 15;
 				}
 			}
 		}
