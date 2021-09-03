@@ -29,7 +29,7 @@ export const HomeHero = props => {
 							<Button
 								onClick={() => navigator.clipboard.writeText("Xenogenesis20@outlook.com")}
 								variant="outline-secondary">
-								Contact : Xenogenesis20@outlook.com
+								Contact : Maikelwebdev@gmail.com
 							</Button>
 						</OverlayTrigger>
 					</Col>
