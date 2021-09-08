@@ -4,6 +4,7 @@ const PROJECTS = [
 		description: `Web app for users to track symptoms, vitals, medications and doctor visits.`,
 		image: "https://i.imgur.com/GRvazvP.png",
 		github: "https://github.com/xenogenesis20/Next-Visit-",
+		demo: "https://next-visit-j7gxruheb-maikelwebdev.vercel.app/",
 		date: "Aug, 2021",
 		stack: "React, JS",
 		snipet: false,
