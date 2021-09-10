@@ -25,7 +25,7 @@ const Contact = props => {
 						<Card.Body>
 							<Card.Title>Email</Card.Title>
 							<Card.Subtitle className="mb-2 text-muted">Send one, its free :)</Card.Subtitle>
-							<Card.Text>Xenogenesis20@outlook.com</Card.Text>
+							<Card.Text>Maikelwebdev@gmail.com</Card.Text>
 						</Card.Body>
 					</Card>
 				</Col>
