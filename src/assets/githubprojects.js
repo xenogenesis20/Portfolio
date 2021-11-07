@@ -69,7 +69,7 @@ const PROJECTS = [
 	{
 		title: "Point rewards tracker API",
 		description: `This is an api that tracks points earned by a user, think of it like a rewards system that companies use.`,
-		image: "https://imgur.com/a/p3jr6To",
+		image: "https://i.imgur.com/zj9BI5l.jpg",
 		github: "https://github.com/xenogenesis20/cautious-spoon",
 		date: "2021",
 		stack: "Node.js, Express, MongoDB/Mongo Atlas ",
