@@ -40,7 +40,7 @@ const PROJECTS = [
 		github: "https://github.com/xenogenesis20/Bootstrap-project",
 		date: "Apr, 2021",
 		stack: "HTML, CSS",
-		snipet: false,
+		snipet: true,
 		favorite: false,
 		backend: false
 	},
@@ -67,15 +67,15 @@ const PROJECTS = [
 		backend: false
 	},
 	{
-		title: "",
-		description: ``,
-		image: "",
-		github: "",
-		date: ", 2021",
-		stack: "JS, CSS,",
-		snipet: true,
-		favorite: false,
-		backend: false
+		title: "Point rewards tracker API",
+		description: `This is an api that tracks points earned by a user, think of it like a rewards system that companies use.`,
+		image: "https://imgur.com/a/p3jr6To",
+		github: "https://github.com/xenogenesis20/cautious-spoon",
+		date: "2021",
+		stack: "Node.js, Express, MongoDB/Mongo Atlas ",
+		snipet: false,
+		favorite: true,
+		backend: true
 	}
 ];
 export default PROJECTS;
